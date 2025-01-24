@@ -118,7 +118,7 @@ start_node_and_bind_account() {
     check_command "启动 multiple-node"
 
     echo "正在绑定账户，ID: $IDENTIFIER，PIN: $PIN..."
-    multiple-cli bind --bandwidth-download 200000 --identifier U8C73H3T --pin 535152 --storage 200000 --bandwidth-upload 200000
+    multiple-cli bind --bandwidth-download 200000 --identifier U8C73H3T --pin 535152 --storage 20000 --bandwidth-upload 200000
     check_command "绑定账户"
 }
 
