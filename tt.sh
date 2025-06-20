@@ -19,7 +19,7 @@ container_count=5
 start_rpc_port=36000
 
 # 设置固定的存储空间大小
-storage_gb=5
+storage_gb=1
 
 # 设置固定的存储路径（留空使用默认路径）
 custom_storage_path=""
