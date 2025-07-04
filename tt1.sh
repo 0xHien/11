@@ -133,7 +133,15 @@ function main_menu() {
         echo "请选择要执行的操作:"
         echo "1. 安装节点"
         echo "2. 卸载节点"
-        read -p "请输入选项（1-2）: " OPTION
+        # 10秒超时，默认选择安装节点
+        echo "10秒内无输入将自动安装节点..."
+        if read -t 10 -p "请输入选项（1-2）: " OPTION; then
+            echo
+        else
+            echo
+            echo "超时，自动选择安装节点..."
+            OPTION=1
+        fi
 
         case $OPTION in
         1) install_node ;;
